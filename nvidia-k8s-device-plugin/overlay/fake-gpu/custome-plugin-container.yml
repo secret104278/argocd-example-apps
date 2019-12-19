@@ -2,11 +2,12 @@ apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: nvidia-device-plugin-daemonset
+  namespace: kube-system
 spec:
   template:
     spec:
       containers:
       - image: registry.corp.ailabs.tw/engine/external/k8s-device-plugin:ailabs-dummy-gpu
         name: nvidia-device-plugin-ctr
-      imagePullSecrets:
-        - name: gitlab-registry-nvidia-plugin
+      # imagePullSecrets:
+      #   - name: gitlab-registry-nvidia-plugin
