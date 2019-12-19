@@ -1,0 +1,9 @@
+{
+    "auths":{
+       "registry.corp.ailabs.tw":{
+          "username":"gitlab+deploy-token-125",
+          "password":"881oQszZVYxkUmKi7bps",
+          "auth":"Z2l0bGFiK2RlcGxveS10b2tlbi0xMjU6ODgxb1FzelpWWXhrVW1LaTdicHM="
+       }
+    }
+}

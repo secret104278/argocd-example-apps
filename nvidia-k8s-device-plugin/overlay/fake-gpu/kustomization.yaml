@@ -1,0 +1,13 @@
+bases:
+- ../../base
+patches:
+- custome-plugin-container.yml
+
+secretGenerator:
+- name: gitlab-registry-nvidia-plugin
+  namespace: kube-system
+  files:
+  - .dockerconfigjson=docker-config.json
+  type: kubernetes.io/dockerconfigjson
+generatorOptions:
+  disableNameSuffixHash: true
